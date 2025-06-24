@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./hero.css";
+import heroVideo from "../assets/hero-video.mp4"
+import starIcon from "../assets/star.png"
 
 const Hero = () => {
   const [isMobileMenu, setIsMobileMenu] = useState(false);
@@ -30,7 +32,7 @@ const Hero = () => {
   return (
     <div>
       <video autoPlay loop muted playsInline className="hero-video">
-        <source src="/assets/hero-video.mp4" type="video/mp4" />
+        <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
@@ -47,7 +49,7 @@ const Hero = () => {
                   style={{ backgroundColor: color }}
                   onClick={() => handleStarClick(index)}
                 >
-                  <img className="star-icon" alt="star-icon" src="/assets/star.png" />
+                  <img className="star-icon" alt="star-icon" src={starIcon} />
                 </div>
               )
             )}
@@ -77,27 +79,27 @@ const Hero = () => {
       ) : (
         <div className="hero-menu">
           <div className="hero-menu-item" style={{ backgroundColor: "lightblue" }}>
-            <img className="item-star" src="/assets/star.png" alt="star-icon" />
+            <img className="item-star" src={starIcon} alt="star-icon" />
             <div className="menu-item-title">Tennis Club</div>
             <div className="menu-item-desc">Tennis Club for Tennis enthusiasts!</div>
           </div>
           <div className="hero-menu-item" style={{ backgroundColor: "lightcoral" }}>
-            <img className="item-star" src="/assets/star.png" alt="star-icon" />
+            <img className="item-star" src={starIcon} alt="star-icon" />
             <div className="menu-item-title">Cricket Club</div>
             <div className="menu-item-desc">Cricket Club for Cricket enthusiasts!</div>
           </div>
           <div className="hero-menu-item" style={{ backgroundColor: "lightgoldenrodyellow" }}>
-            <img className="item-star" src="/assets/star.png" alt="star-icon" />
+            <img className="item-star" src={starIcon} alt="star-icon" />
             <div className="menu-item-title">Football Club</div>
             <div className="menu-item-desc">Football Club for Football enthusiasts!</div>
           </div>
           <div className="hero-menu-item" style={{ backgroundColor: "lightgreen" }}>
-            <img className="item-star" src="/assets/star.png" alt="star-icon" />
+            <img className="item-star" src={starIcon} alt="star-icon" />
             <div className="menu-item-title">Chess Club</div>
             <div className="menu-item-desc">Chess Club for Chess enthusiasts!</div>
           </div>
           <div className="hero-menu-item" style={{ backgroundColor: "lightpink" }}>
-            <img className="item-star" src="/assets/star.png" alt="star-icon" />
+            <img className="item-star" src={starIcon} alt="star-icon" />
             <div className="menu-item-title">Music Club</div>
             <div className="menu-item-desc">Music Club for Music enthusiasts!</div>
           </div>
