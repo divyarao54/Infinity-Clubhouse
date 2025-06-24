@@ -13,6 +13,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate to="/home"/>}/>
           <Route exact path='/home' element={<HomePage/>}/>
+          <Route exact path="/Infinity-Clubhouse/" element={<Navigate to="/home"/>}/>
+
         </Routes>
       </BrowserRouter>
     </div>
