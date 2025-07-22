@@ -1,0 +1,16 @@
+.events-section-toggle{
+    z-index: 100;;
+}
+
+.hero-about{
+    z-index: -10;;
+}
+
+@media screen and (max-width: 850px) {
+    .events-section-toggle{
+        z-index: -10;
+    }
+    .hero-about{
+        z-index: 150
+    }
+}

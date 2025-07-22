@@ -1,0 +1,152 @@
+.ab-full-container {
+    overflow: hidden;
+    background-color: #000;
+    height: 700px;
+    width: 100%;
+    position: absolute;
+    top: 837px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 100;
+}
+
+.about-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: left;
+    z-index: 0;
+    /*background-color: black;*/
+    padding: 50px;
+    padding-bottom: 100px;
+    z-index: -15;
+}
+.about-heading {
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.about-desc {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.hero-menu{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 370px;
+    width: 100%;
+    z-index: 10;
+}
+
+.hero-menu-item{
+    width: /*max-content*/25%;
+    padding: 20px 35px 70px 35px;
+    transition: transform 500ms;
+    z-index: 10;
+}
+
+.item-star{
+    width: 35px;
+    height: 35px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+
+}
+
+.menu-item-title{
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+
+}
+
+.menu-item-desc{
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0);
+
+    z-index: 10;
+}
+
+.hero-menu-item:hover{
+    transform: translate(0, -155px);
+}
+
+@media only screen and (max-width: 850px) {
+    
+    .ab-full-container{
+        height: 1000px;
+    }
+
+    .hero-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        z-index: 100;
+      }
+    
+      .hero-menu-item {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+      }
+    
+      .hero-menu-item-content {
+        display: none;
+        margin-top: 10px;
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: left;
+      }
+    
+      .hero-menu-item.active .hero-menu-item-content {
+        display: block;
+      }
+
+      .hero-cover{
+        display: none;
+      }
+
+      .mobile-hero-menu{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        top: 850px;
+        z-index: 100;
+      }
+
+      .star-container{
+        width: 25%;
+        /*background-color: #abcdef;*/
+        border: 1px white;
+        z-index: 100;
+      }
+
+      .star-icon{
+        width: 35px;
+        height: 35px;
+        /*padding: 0 15px 0 15px;*/
+      }
+      .info-tab-container.hidden{
+        display: none;
+      }
+
+      .info-tab-container.visible{
+        display: block;
+        z-index: 100;
+        position: absolute;
+        top: 889px;
+        width: 100%;
+        transition: fade-in 500ms;
+      }
+}
